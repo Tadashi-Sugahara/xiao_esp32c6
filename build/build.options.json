@@ -2,7 +2,7 @@
   "additionalFiles": "",
   "compiler.optimization_flags": "-Os",
   "customBuildProperties": "",
-  "fqbn": "esp32:esp32:XIAO_ESP32C6",
+  "fqbn": "esp32:esp32:XIAO_ESP32C6:JTAGAdapter=default,CDCOnBoot=cdc,PartitionScheme=default,CPUFreq=160,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none,EraseFlash=none,ZigbeeMode=default",
   "hardwareFolders": "/home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7,/home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7",
   "otherLibrariesFolders": "/home/tadashi/Arduino/libraries",
   "sketchLocation": "/home/tadashi/Python/xiao_esp32c6/radio_controller"

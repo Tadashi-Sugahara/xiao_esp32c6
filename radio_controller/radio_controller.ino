@@ -11,7 +11,6 @@ nFAULT:GPIO1
 
 SDA: GPIO06
 SCL: GPIO07
-
 */
 
 #include <WiFi.h>
