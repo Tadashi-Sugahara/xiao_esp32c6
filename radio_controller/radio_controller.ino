@@ -3,6 +3,7 @@ xiao ESP32C6 でAPモードでWebサーバーを立ち上げる。Webサーバ�
 して、ゲームパッドのボタンを押すと、シリアルモニタに押されたボタンの名前を表示する。
 
 ESP32C6にモータドライバ（DRV8833)と加速度センサ（MPU-6050)が接続されている。
+ANT_SEL: GPIO14 (ESP32C6の内蔵アンテナと外部アンテナの切り替えに使用。LOWで内蔵アンテナ、HIGHで外部アンテナ)
 
 AIN1：GPIO4
 AIN2：GPIO5
@@ -27,6 +28,7 @@ const int PIN_NFAULT = 1;
 
 const int PIN_SDA = 6;
 const int PIN_SCL = 7;
+const int PIN_ANT = 14;
 
 const uint8_t MPU6050_ADDR = 0x68;
 
@@ -384,8 +386,10 @@ void setup() {
 	pinMode(PIN_AIN1, OUTPUT);
 	pinMode(PIN_AIN2, OUTPUT);
 	pinMode(PIN_SLEEP, OUTPUT);
+  pinMode(PIN_ANT, OUTPUT);
 	pinMode(PIN_NFAULT, INPUT_PULLUP);
 	motorStop();
+  digitalWrite(PIN_ANT, LOW);
 	digitalWrite(PIN_SLEEP, HIGH);
 
 	Wire.begin(PIN_SDA, PIN_SCL);

@@ -3,5 +3,6 @@
     "board": "esp32:esp32:XIAO_ESP32C6",
     "programmer": "esp32:esptool",
     "sketch": "radio_controller/radio_controller.ino",
-    "output": "build"
+    "output": "build",
+    "port": "/dev/ttyACM0"
 }
