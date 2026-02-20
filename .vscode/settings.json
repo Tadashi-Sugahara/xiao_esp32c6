@@ -1,0 +1,6 @@
+{
+  "arduino.useArduinoCli": true,
+  "arduino.path": "/home/tadashi/.local/bin",
+  "arduino.commandPath": "arduino-cli",
+  "C_Cpp.errorSquiggles": "disabled"
+}

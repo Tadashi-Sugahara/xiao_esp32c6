@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Arduino CLI: Verify radio_controller",
+			"type": "shell",
+			"command": "/home/tadashi/.local/bin/arduino-cli",
+			"args": [
+				"compile",
+				"--fqbn",
+				"esp32:esp32:XIAO_ESP32C6",
+				"--build-path",
+				"build",
+				"radio_controller/radio_controller.ino"
+			],
+			"group": "build"
+		}
+	]
+}
