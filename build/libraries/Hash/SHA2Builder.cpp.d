@@ -1,0 +1,36 @@
+/home/tadashi/Python/xiao_esp32c6/build/libraries/Hash/SHA2Builder.cpp.o: \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/libraries/Hash/src/SHA2Builder.cpp \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/esp32-hal-log.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_timer/include/esp_timer.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/newlib/platform_include/stdio.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_err.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_compiler.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_hw_support/include/esp_etm.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_rom/esp32c6/include/esp32c6/rom/ets_sys.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_rom/include/esp_rom_sys.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/soc/esp32c6/include/soc/reset_reasons.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/soc/esp32c6/include/soc/soc_caps.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_config.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_level.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_assert.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_color.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_buffer.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_timestamp.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_write.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_format.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_args.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_macros.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_assert.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_log_attr.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/esp_common/include/esp_attr.h \
+ /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/include/log/include/esp_private/log_attr.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/libraries/Hash/src/SHA2Builder.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/WString.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/pgmspace.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/Stream.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/Print.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/WString.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/Printable.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/HashBuilder.h \
+ /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/HEXBuilder.h
