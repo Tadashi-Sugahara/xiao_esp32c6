@@ -13,8 +13,6 @@ nFAULT:GPIO1
 
 SDA: GPIO06
 SCL: GPIO07
-
-
 */
 
 #include <WiFi.h>
@@ -38,27 +36,27 @@ unsigned long lastMpuPrintMs = 0;
 
 WebServer server(80);
 
-#line 39 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 37 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorStop();
-#line 44 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 42 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorForward();
-#line 49 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 47 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorReverse();
-#line 54 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 52 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void mpuWriteRegister(uint8_t reg, uint8_t value);
-#line 61 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 59 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 bool mpuInit();
-#line 74 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 72 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 bool mpuReadAccelRaw(int16_t& ax, int16_t& ay, int16_t& az);
-#line 348 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 346 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void handleRoot();
-#line 352 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 350 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void handlePress();
-#line 382 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 380 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void setup();
-#line 420 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 418 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void loop();
-#line 39 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 37 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorStop() {
 	digitalWrite(PIN_AIN1, LOW);
 	digitalWrite(PIN_AIN2, LOW);
