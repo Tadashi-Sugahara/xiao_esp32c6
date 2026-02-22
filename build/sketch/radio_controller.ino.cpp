@@ -1,10 +1,11 @@
 #include <Arduino.h>
-#line 1 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 1 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 /*
 xiao ESP32C6 でAPモードでWebサーバーを立ち上げる。Webサーバーは、スーパーファミコン風のゲームパッドを表示
 して、ゲームパッドのボタンを押すと、シリアルモニタに押されたボタンの名前を表示する。
 
 ESP32C6にモータドライバ（DRV8833)と加速度センサ（MPU-6050)が接続されている。
+ANT_SEL: GPIO14 (ESP32C6の内蔵アンテナと外部アンテナの切り替えに使用。LOWで内蔵アンテナ、HIGHで外部アンテナ)
 
 AIN1：GPIO4
 AIN2：GPIO5
@@ -22,13 +23,13 @@ SCL: GPIO07
 const char* AP_SSID = "XIAO-ESP32C6";
 const char* AP_PASS = "12345678";
 
-const int PIN_AIN1 = 4;
-const int PIN_AIN2 = 5;
-const int PIN_SLEEP = 2;
-const int PIN_NFAULT = 1;
+const int PIN_AIN1 = 10;
+const int PIN_AIN2 = 9;
+const int PIN_SLEEP = 8;
+const int PIN_NFAULT = 7;
 
-const int PIN_SDA = 6;
-const int PIN_SCL = 7;
+const int PIN_SDA = 4;
+const int PIN_SCL = 5;
 const int PIN_ANT = 14;
 
 const uint8_t MPU6050_ADDR = 0x68;
@@ -37,27 +38,27 @@ unsigned long lastMpuPrintMs = 0;
 
 WebServer server(80);
 
-#line 38 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 39 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorStop();
-#line 43 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 44 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorForward();
-#line 48 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 49 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorReverse();
-#line 53 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 54 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void mpuWriteRegister(uint8_t reg, uint8_t value);
-#line 60 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 61 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 bool mpuInit();
-#line 73 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 74 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 bool mpuReadAccelRaw(int16_t& ax, int16_t& ay, int16_t& az);
-#line 347 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 348 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void handleRoot();
-#line 351 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 352 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void handlePress();
-#line 381 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 382 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void setup();
-#line 421 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 422 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void loop();
-#line 38 "/home/tadashi/Python/xiao_esp32c6/radio_controller/radio_controller.ino"
+#line 39 "/Users/tadashi/Library/Mobile Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/radio_controller/radio_controller.ino"
 void motorStop() {
 	digitalWrite(PIN_AIN1, LOW);
 	digitalWrite(PIN_AIN2, LOW);

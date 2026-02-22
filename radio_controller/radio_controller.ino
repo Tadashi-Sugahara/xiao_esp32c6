@@ -21,13 +21,13 @@ SCL: GPIO07
 const char* AP_SSID = "XIAO-ESP32C6";
 const char* AP_PASS = "12345678";
 
-const int PIN_AIN1 = 4;
-const int PIN_AIN2 = 5;
-const int PIN_SLEEP = 2;
-const int PIN_NFAULT = 1;
+const int PIN_AIN1 = 10;
+const int PIN_AIN2 = 9;
+const int PIN_SLEEP = 8;
+const int PIN_NFAULT = 7;
 
-const int PIN_SDA = 6;
-const int PIN_SCL = 7;
+const int PIN_SDA = 4;
+const int PIN_SCL = 5;
 const int PIN_ANT = 14;
 
 const uint8_t MPU6050_ADDR = 0x68;

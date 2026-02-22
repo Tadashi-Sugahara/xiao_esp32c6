@@ -1,3 +1,3 @@
-/home/tadashi/Python/xiao_esp32c6/build/core/esp32-hal-log-wrapper.c.o: \
- /home/tadashi/.arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/esp32-hal-log-wrapper.c \
- /home/tadashi/.arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/qio_qspi/include/sdkconfig.h
+/Users/tadashi/Library/Mobile\ Documents/com~apple~CloudDocs/MyPython/xiao_esp32c6/build/core/esp32-hal-log-wrapper.c.o: \
+ /Users/tadashi/Library/Arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32/esp32-hal-log-wrapper.c \
+ /Users/tadashi/Library/Arduino15/packages/esp32/tools/esp32c6-libs/3.3.7/qio_qspi/include/sdkconfig.h
