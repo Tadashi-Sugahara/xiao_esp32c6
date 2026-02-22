@@ -28,6 +28,7 @@ const int PIN_NFAULT = 7;
 
 const int PIN_SDA = 4;
 const int PIN_SCL = 5;
+// ANT_SEL pin for switching between internal and external antenna
 const int PIN_ANT = 14;
 
 const uint8_t MPU6050_ADDR = 0x68;
